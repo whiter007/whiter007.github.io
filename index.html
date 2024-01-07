@@ -1,13 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>whiter007的博客</title> 
+    <title>whiter007的笔记-HTML</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/three.js/0.156.1/three.js"></script>
 </head>
+
 <body>
-    <h1>你好</h1>
-    <h2>这里什么都没有</h2>
-    <p>确实什么都没写</p>
+    <h1>Hi,这是whiter007</h1>
+    <hr>
+    <h2>一、Root element 根元素</h2>
+    <ol>
+        <li>html：Document root element.</li>
+    </ol>
+    <hr>
+    <h2>二、Text-level semantics 文本语义</h2>
+    <ol>
+        <li>a：Hyperlink.</li>
+        <a href="baidu.com">百度链接</a>
+        <li>abbr：Abbreviation or acronym.</li>
+        <abbr title="大写原文">缩写</abbr>
+        <li>b：Stylistically separated text of equal importance, such as a product name.</li>
+        <b>加粗文字</b>
+        <li>bdi：Text that is separated from directional formatting of its surroundings.</li>
+        没有这个定义
+        <li>bdo：Defines directional formatting for content.</li>
+        <bdo dir="ltr">左</bdo>
+        <bdo dir="rtl">右</bdo>
+        <li>cite：Title of a referenced piece of work.</li>
+        <cite>斜体字</cite>
+        <li>code：Fragment of code.</li>
+        <code>if (0==1) return false;</code>
+        <li>dfn：Term being defined by the parent section.</li>
+        <dfn>这也是斜体字</dfn>
+        <li>del：Text that has been removed during document editing.</li>
+        <del>这是删除</del>
+        <li>em：Text that should be emphasised.</li>
+        <em>这也是斜体字</em>
+        <li>i：Text in a alternate voice or mood, such as a technical term.</li>
+        <i>这也是斜体字</i>
+        <li>ins：Text that has been inserted during document editing.</li>
+        <ins>下划线</ins>
+        <li>kbd：Example input (usually keyboard) for a program.</li>
+        <kbd>if (0==1) return false;</kbd>
+        <li>mark：Text highlighted for referencing elsewhere.</li>
+        <mark>这是高亮</mark>
+        <li>q：Quoted text.</li>
+        <q>这是引用的文字</q>
+        <li>rp：Contains semantically meaningless markup for browsers that don't understand ruby annotations.</li>
+        <rp>这是ruby注解</rp>
+        <li>rt：Annotation of preceding text.</li>
+        <rt>这是注释</rt>
+        <li>ruby：Contains text with annotations, such as pronounciation hints. Commonly used in East Asian text.</li>
+        <ruby>这是ruby注解</ruby>
+        <li>s：Text that is outdated or no longer accurate.</li>
+        <s>特殊删除线</s>
+        <li>samp：Sample output of a program.</li>
+        <samp>if (0==1) return false;</samp>
+        <li>small：An aside, such as fine print.</li>
+        <small>小字旁白</small>
+        <li>span：Container with no semantic meaning.</li>
+        <span>容器</span>
+        <li>strong： Text that is important.</li>
+        <strong>加粗文字</strong>
+        <li>sub：Subscript text.</li>
+        文字<sub>下标</sub>
+        <li>sup：Superscript text.</li>
+        文字<sup>上标</sup>
+        <li>time：Time defined in a machine readable format.</li>
+        <time>2024-01-7</time>
+        <li>var：Mathematical or programming variable.</li>
+        <var>变量x</var>
+        <li>wbr：Opportunity for a line break.</li>
+        <wbr>文字<wbr>
+    </ol>
+    <hr>
+    <h2>三、Forms 表单</h2>
+    <ol>
+        <li>fieldset：Set of form controls grouped by theme.</li>
+        <li>meter：Control for entering a numeric value in a known range.</li>
+        <li>legend：Define a name for a fieldset.</li>
+        <li>label：Caption for a form control.</li>
+        <li>input：Generic form input.</li>
+        <li>textarea：Multiline free-form text input.</li>
+        <li>form：Form.</li>
+        <li>select：Control for selecting from multiple options.</li>
+        <li>optgroup：Group of option.</li>
+        <li>option：Single option within a select control.</li>
+        <li>output：Contains the results of a calculation.</li>
+        <li>button：A button.</li>
+        <li>datalist：Define sets of options.</li>
+        <li>keygen：Generates private-public key pairs.</li>
+        <li>progress：ontrol for displaying progress of a task.</li>
+    </ol>
+    <hr>
+    <h2>四、Tabular data 表格数据</h2>
+    <ol>
+        <li>col：Columns in a table.</li>
+        <li>colgroup：Defines a group of columns in a table.</li>
+        <li>caption：Title of a table.</li>
+        <li>table：Table of multi-dimensional data.</li>
+        <li>tr：A row of cells.</li>
+        <li>td：Table cell.</li>
+        <li>th：Table heading.</li>
+        <li>tbody：Contains rows that hold the table's data.</li>
+        <li>thead：Contains rows with table headings.</li>
+        <li>tfoot：Contains rows with summary of data.</li>
+    </ol>
+    <hr>
+    <h2>五、Metadata and scripting 元数据脚本</h2>
+    <ol>
+        <li>head：First element of the HTML document. Contains document metadata.</li>
+        <li>title：Document title.</li>
+        <li>meta：Document metadata that can't be represented with other elements.</li>
+        <li>base：Specifies URL which non-absolute URLs are relative to.</li>
+        <li>link：Other resources related to the document.</li>
+        <li>style：Styling defined inline data.</li>
+        <li>noscript：Contains elements that are part of the document only if scripting is disabled.</li>
+        <li>script：Inline or linked client side scripts.</li>
+    </ol>
+    <hr>
+    <h2>六、Grouping content 分组内容</h2>
+    <ol>
+        <li>br：Line break.</li>
+        <li>hr：Thematic break within a paragraph.</li>
+        <li>figcaption：Caption for a figure.</li>
+        <li>figure：Contains elements related to single concept, such as an illustration or code example.</li>
+        <li>p：Paragraph content.</li>
+        <li>ol：Ordered list.</li>
+        <li>ul：Unordered list.</li>
+        <li>li：List item.</li>
+        <li>div：Container with no semantic meaning.</li>
+        <li>pre：Text that is preformatted in the HTML code.</li>
+        <li>blockquote：Quote from another source.</li>
+        <li>dl：List of term-description pairs.</li>
+        <li>dt：Term which will be described.</li>
+        <li>dd：Description for the preceding term.</li>
+    </ol>
+    <hr>
+    <h2>七、Document sections 文档 块</h2>
+    <ol>
+        <li>body：Document content.</li>
+        <li>aside：Content related to surrounding elements that doesn't belong inline, such as a advertising or quotes.</li>
+        <li>address：Contact information for the current article.</li>
+        <li>h1-6：Heading for the current section.</li>
+        <li>section：Contains elements grouped by theme, for example a chapter or tab box.</li>
+        <li>header：Navigation or introductory elements for the current section.</li>
+        <li>nav：Contains a collection of links.</li>
+        <li>article：Section of the page content, such as a blog or forum post.</li>
+        <li>footer：Footer of the current section.</li>
+        <li>hgroup：Collection of headings for the current section. The highest ranked heading represents the group in the document outline.</li>
+    </ol>
+    <hr>
+    <h2>八、Interactive elements 交互元素</h2>
+    <ol>
+        <li>menu：Set of commands.</li>
+        <li>command：Command the user can perform, such as publishing an article. </li>
+        <li>summary：Caption of a details element.</li>
+        <li>details：Contains additional information, such as the contents of an accordian view. </li>
+    </ol>
+    <hr>
+    <h2>九、Embedding content 嵌入内容</h2>
+    <ol>
+        <li>img>：An image.</li>
+        <li>area：Hyperlink area in an image map.</li>
+        <li>map：Image map for adding hyperlinks to parts of an image.</li>
+        <li>embed：Reference to non-HTML content.</li>
+        <li>object：External resource such as an image, iframe or plugin.</li>
+        <li>param：Parameters for the parent object.</li>
+        <li>source：Alternative sources for parent video or audio elements.</li>
+        <li>iframe：Nested browser frame.</li>
+        <li>canvas：Bitmap which is editable by client side scripts.</li>
+        <li>track：Specifies external timing track for media elements. </li>
+        <li>audio：Audio file.</li>
+        <li>video：Video.</li>
+    </ol>
 </body>
+
 </html>
